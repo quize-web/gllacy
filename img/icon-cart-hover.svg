@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1063" y="600.031" width="20.63" height="19.719" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#343434"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Корзина" class="cls-1" d="M1083.58,604.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.733,3.733,0,0,1-.13-1.054H1064a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1083.17,602.01,1083.84,603.141,1083.58,604.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.034,0.034,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1070.25,615.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,615.987Z" transform="translate(-1063 -600.031)"/>
+</svg>

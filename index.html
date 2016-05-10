@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Gllacy Shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="index-page">
 
 <header class="main-header clearfix">
-    <section class="header-logo"><img src="" width="154" height="64" alt="header-logo"></section>
+    <section class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="header-logo"></section>
     <nav class="header-nav">
         <ul>
-            <li><a href="#">Каталог</a>
+            <li><a href="catalog.html">Каталог</a>
                 <!--<ul>
                            <li class="menu-parent"><a href="#">Новинки</a></li>
-                           <li><a href="#">Сливочное</a></li>
+                           <li><a href="catalog.html">Сливочное</a></li>
                            <li><a href="#">Щербеты</a></li>
                            <li><a href="#">Фруктовый лед</a></li>
                            <li><a href="#">Мелорин</a></li>
@@ -47,7 +48,7 @@
                </form>-->
         </div>
         <div class="header-search">
-            <label for="search"></label>
+            <a href="#"><label for="search"></label></a>
             <!--<form action="#" method="get">
                    <input type="search" name="search" id="search" placeholder="Что ищем?">
                </form>-->
@@ -64,15 +65,13 @@
         <h2 class="index-slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
         <div class="row">
             <div class="column-1">
-                <div class="slider-inputs">
+                <div class="slider-radio">
                     <input type="radio" name="slider-main" id="slider-main-01" checked>
-                    <input type="radio" name="slider-main" id="slider-main-02">
-                    <input type="radio" name="slider-main" id="slider-main-03">
-                    <div class="slider-controls">
                         <label for="slider-main-01"></label>
+                    <input type="radio" name="slider-main" id="slider-main-02">
                         <label for="slider-main-02"></label>
+                    <input type="radio" name="slider-main" id="slider-main-03">
                         <label for="slider-main-03"></label>
-                    </div>
                 </div>
             </div>
             <div class="column-2">
@@ -82,63 +81,63 @@
     </section>
     <section class="promo-blocks clearfix">
         <div class="promo-item column-2 pattern-raspberry">
-            <b>Малинка даром!</b>
+            <b class="promo-title">Малинка даром!</b>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a href="#" class="btn">Хочу варенье!</a>
         </div>
         <div class="promo-item column-2 pattern-chocolate">
-            <b>Шоколадки даром!</b>
+            <b class="promo-title">Шоколадки даром!</b>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a href="#" class="btn">Хочу шоколадки!</a>
         </div>
     </section>
     <section class="icecreams">
         <article class="icecream-item">
-            <div class="icecream-header hit">
-                <img src="#" alt="icecream-image" class="icecream-image">
-                <span class="price">310 Р/кг</span>
-            </div>
-            <h1>Сливочное с апельсиновым джемом и цитрусовой стружкой</h1>
-            <!--<a href="#" class="btn">Быстрый просмотр</a>-->
+            <header class="icecream-header icecream-hit">
+                <div class="icecream-image"><img src="img/icecream-01.png" width="267" height="267" alt="icecream-image"></div>
+                <span class="icecream-price">310<span class="icecream-weight">/кг</span></span>
+            </header>
+            <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h1>
+            <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
         <article class="icecream-item">
-            <div class="icecream-header hit">
-                <img src="#" alt="icecream-image" class="icecream-image">
-                <span class="price">380 Р/кг</span>
-            </div>
-            <h1>Сливочно-кофейное с кусочками шоколада</h1>
-            <!--<a href="#" class="btn">Быстрый просмотр</a>-->
+            <header class="icecream-header icecream-hit">
+                <div class="icecream-image"><img src="img/icecream-02.png" width="267" height="267" alt="icecream-image"></div>
+                <span class="icecream-price">380<span class="icecream-weight">/кг</span></span>
+            </header>
+            <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочно-кофейное с кусочками шоколада</a></h1>
+            <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
         <article class="icecream-item">
-            <div class="icecream-header hit">
-                <img src="#" alt="icecream-image" class="icecream-image">
-                <span class="price">355 Р/кг</span>
-            </div>
-            <h1>Сливочно-клубничное с присыпкой из белого шоколада</h1>
-            <!--<a href="#" class="btn">Быстрый просмотр</a>-->
+            <header class="icecream-header icecream-hit">
+                <div class="icecream-image"><img src="img/icecream-03.png" width="267" height="267" alt="icecream-image"></div>
+                <span class="icecream-price">355<span class="icecream-weight">/кг</span></span>
+            </header>
+            <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочно-клубничное с присыпкой из белого шоколада</a></h1>
+            <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
         <article class="icecream-item">
-            <div class="icecream-header hit">
-                <img src="#" alt="icecream-image" class="icecream-image">
-                <span class="price">415 Р/кг</span>
-            </div>
-            <h1>Сливночное крем-брюле с карамельной подливкой</h1>
-            <!--<a href="#" class="btn">Быстрый просмотр</a>-->
+            <header class="icecream-header icecream-hit">
+                <div class="icecream-image"><img src="img/icecream-04.png" width="267" height="267" alt="icecream-image"></div>
+                <span class="icecream-price">415<span class="icecream-weight">/кг</span></span>
+            </header>
+            <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочное крем-брюле с карамельной подливкой</a></h1>
+            <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
     </section>
     <section class="about-container pattern-wafer">
         <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-        <ul class="about-list clearfix">
+        <ul class="about-list">
             <li class="about-item icon-icecream">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
             <li class="about-item icon-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="about-item icon-leaf">Для приготовления пороженного используются настоящие сливки и молок высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            <li class="about-item icon-leaf">Для приготовления пороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты произведены из натурального, экологически чистого сырья.</li>
             <li class="about-item icon-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
         </ul>
     </section>
     <section class="other-blocks clearfix">
         <div class="other-item column-2 other-blog">
             <h2>Новое в нашем блоге</h2>
-            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <a href="#">10 способов сервировки<br>фруктовых щербетов<br>к столу</a>
         </div>
         <div class="other-item column-2 other-newsletter">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
@@ -150,15 +149,15 @@
     </section>
     <section class="index-map">
         <div class="index-map-contacts">
-            <p>
-                Адрес главного офиса и<br>офлайн магазина:
-                <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-            </p>
-            <p>
-                Для заказов по телефону:
-                <strong>8 812 450-25-25</strong>
-                (с 10 до 20 ежедневно)
-            </p>
+            <div class="index-map-address">
+                <h2>Адрес главного офиса и<br>офлайн магазина:</h2>
+                <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+            </div>
+            <div class="index-map-tel">
+                <h2>Для заказов по телефону:</h2>
+                <p><strong>8 812 450-25-25</strong><br>
+                    (с 10 до 20 ежедневно)</p>
+            </div>
             <a href="#" class="btn">Форма обратной связи</a>
             <!--<div class="map-frame">
                    <b>Мы обязательно вам ответим!</b>
@@ -185,16 +184,19 @@
             <ul>
                 <li><a href="#" class="footer-nav-favorite">Для поставщиков</a></li>
                 <li><a href="#">Наши документы</a></li>
+            </ul>
+            <ul>
                 <li><a href="#">О производстве</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
             </ul>
         </nav>
     </section>
     <section class="footer-copyright column-1">
-        <div class="copyright-logo"><img src="" width="200" height="100" alt="copyright-logo"></div>
+        <div class="copyright-logo"><img src="img/copyright-logo.svg" width="107" height="36" alt="copyright-logo"></div>
         <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
     </section>
 </footer>
 
+<script src="js/prefixfree.min.js"></script>
 </body>
 </html>
