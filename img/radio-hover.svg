@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.25" height="20.25" viewBox="0 0 20.25 20.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f7f4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Радиобаттон_выкл._copy" data-name="Радиобаттон выкл. copy" class="cls-1" d="M269.84,2338.88A10.115,10.115,0,1,1,259.725,2349,10.117,10.117,0,0,1,269.84,2338.88Zm0,2.14a7.98,7.98,0,1,1-7.98,7.98A7.978,7.978,0,0,1,269.841,2341.02Z" transform="translate(-259.719 -2338.88)"/>
+</svg>

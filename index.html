@@ -11,15 +11,15 @@
 <header class="main-header clearfix">
     <section class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="header-logo"></section>
     <nav class="header-nav">
-        <ul>
+        <ul class="header-menu">
             <li><a href="catalog.html">Каталог</a>
-                <!--<ul>
-                           <li class="menu-parent"><a href="#">Новинки</a></li>
-                           <li><a href="catalog.html">Сливочное</a></li>
-                           <li><a href="#">Щербеты</a></li>
-                           <li><a href="#">Фруктовый лед</a></li>
-                           <li><a href="#">Мелорин</a></li>
-                   </ul>-->
+                <ul class="header-submenu">
+                    <li class="header-submenu-parent"><a href="#">Новинки</a></li>
+                    <li><a href="catalog.html">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                </ul>
             </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
@@ -28,30 +28,45 @@
     <section class="user-block clearfix">
         <div class="header-cart">
             <a href="#" class="cart empty">Пусто</a>
-            <!--<div class="cart-container">
-                   <ul>
-                   </ul>
-                   <b class="total" data-total="750">Итого: </b>
-                   <a href="#" class="btn">Оформить заказ</a>
-               </div>-->
+            <!--<a href="#" class="cart empty">2 товара</a>-->
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="x-button">X</div>
+                        <div class="cart-item-image"><img src="img/cart-item-01.png" width="33" height="33" alt="icecream"></div>
+                        <div class="cart-item-name">Пломбир с апельсиновым джемом</div>
+                        <div class="cart-item-calc">1,5 кг <span class="cart-item-price">x 200 руб.</span></div>
+                        <div class="cart-item-total">300 руб.</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="x-button">X</div>
+                        <div class="cart-item-image"><img src="img/cart-item-02.png" width="33" height="33" alt="icecream"></div>
+                        <div class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+                        <div class="cart-item-calc">1,5 кг <span class="cart-item-price">x 300 руб.</span></div>
+                        <div class="cart-item-total">450 руб.</div>
+                    </div>
+                </div>
+                <strong class="total">Итого: 750 руб.</strong>
+                <a href="#" class="btn">Оформить заказ</a>
+            </div>
         </div>
         <div class="header-login">
             <a href="#">Вход</a>
-            <!--<form action="#" method="post">
-                   <input type="email" name="email" placeholder="Электронная почта" required>
-                   <input type="password" name="password" placeholder="Пароль" required>
-                   <button type="submit" class="btn">Войти</button>
-                   <div class="other">
-                       <a href="#">Забыли пароль?</a>
-                       <a href="#">Новая регистрация</a>
-                   </div>
-               </form>-->
+            <form action="#" method="post">
+                <input type="text" name="header-email" placeholder="Электронная почта" required>
+                <input type="password" name="header-password" placeholder="Пароль" required>
+                <button type="submit" class="btn">Войти</button>
+                <div class="other">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                </div>
+            </form>
         </div>
         <div class="header-search">
-            <a href="#"><label for="search"></label></a>
-            <!--<form action="#" method="get">
-                   <input type="search" name="search" id="search" placeholder="Что ищем?">
-               </form>-->
+            <a href="#"></a>
+            <form action="#" method="get">
+                <input type="search" name="header-search" id="header-search" placeholder="Что ищем?">
+            </form>
         </div>
     </section>
     <section class="header-info">
@@ -63,6 +78,8 @@
 <main>
     <section class="index-slider clearfix">
         <h2 class="index-slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
+        <!--<h2 class="index-slider-title">Шоколадный пломбир и лимонный сорбет</h2>-->
+        <!--<h2 class="index-slider-title">Пломбир с помадкой и клубничный щербет</h2>-->
         <div class="row">
             <div class="column-1">
                 <div class="slider-radio">
@@ -142,7 +159,7 @@
         <div class="other-item column-2 other-newsletter">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
             <form action="#" method="post">
-                <input type="email" name="email" placeholder="Электронная почта" required>
+                <input type="text" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
                 <button type="submit" class="btn">Отправить</button>
             </form>
         </div>
@@ -159,15 +176,6 @@
                     (с 10 до 20 ежедневно)</p>
             </div>
             <a href="#" class="btn">Форма обратной связи</a>
-            <!--<div class="map-frame">
-                   <b>Мы обязательно вам ответим!</b>
-                   <form action="#" method="post" class="feedback-form">
-                       <input type="text" name="name" placeholder="Как вас зовут?">
-                       <input type="email" name="email" placeholder="Ваша почта для ответа?">
-                       <textarea name="message" rows="10" placeholder="Напишите что-нибудь..." required></textarea>
-                       <button type="submit" class="btn">Отправить</button>
-                   </form>
-               </div>-->
         </div>
     </section>
 </main>
@@ -198,5 +206,31 @@
 </footer>
 
 <script src="js/prefixfree.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- frames -->
+
+<div class="overlay"></div>
+
+<div class="feedback-frame">
+    <strong>Мы обязательно вам ответим!</strong>
+    <form action="#" method="post">
+        <label for="feedback-name">
+            <input type="text" name="feedback-name" id="feedback-name" required>
+            <span class="input-label">Как вас зовут?</span>
+        </label>
+        <label for="feedback-email">
+            <input type="text" name="feedback-email" id="feedback-email" required>
+            <span class="input-label">Ваша почта для ответа?</span>
+        </label>
+        <label for="feedback-message">
+            <textarea name="feedback-message" id="feedback-message" required></textarea>
+            <span class="input-label">Напишите что-нибудь...</span>
+        </label>
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+    <div class="x-button"></div>
+</div>
+
 </body>
 </html>
