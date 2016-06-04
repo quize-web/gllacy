@@ -5,8 +5,9 @@
     <title>Gllacy Shop</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
-<body class="index-page">
+<body class="index-page first-slide">
 
 <header class="main-header clearfix">
     <section class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="header-logo"></section>
@@ -27,18 +28,17 @@
     </nav>
     <section class="user-block clearfix">
         <div class="header-cart">
-            <a href="#" class="cart empty">Пусто</a>
-            <!--<a href="#" class="cart empty">2 товара</a>-->
+            <a href="#" class="cart">Пусто</a>
             <div class="cart-container">
                 <div class="cart-items">
-                    <div class="cart-item">
+                    <div class="cart-item" data-icecream="01">
                         <div class="x-button">X</div>
                         <div class="cart-item-image"><img src="img/cart-item-01.png" width="33" height="33" alt="icecream"></div>
                         <div class="cart-item-name">Пломбир с апельсиновым джемом</div>
                         <div class="cart-item-calc">1,5 кг <span class="cart-item-price">x 200 руб.</span></div>
                         <div class="cart-item-total">300 руб.</div>
                     </div>
-                    <div class="cart-item">
+                    <div class="cart-item" data-icecream="03">
                         <div class="x-button">X</div>
                         <div class="cart-item-image"><img src="img/cart-item-02.png" width="33" height="33" alt="icecream"></div>
                         <div class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
@@ -77,12 +77,14 @@
 
 <main>
     <section class="index-slider clearfix">
-        <h2 class="index-slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
-        <!--<h2 class="index-slider-title">Шоколадный пломбир и лимонный сорбет</h2>-->
-        <!--<h2 class="index-slider-title">Пломбир с помадкой и клубничный щербет</h2>-->
+        <div class="index-slider-titles">
+            <h2 class="first-title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <h2 class="second-title hidden">Шоколадный пломбир и лимонный сорбет</h2>
+            <h2 class="third-title hidden">Пломбир с помадкой и клубничный щербет</h2>
+        </div>
         <div class="row">
             <div class="column-1">
-                <div class="slider-radio">
+                <div class="index-slider-radio">
                     <input type="radio" name="slider-main" id="slider-main-01" checked>
                         <label for="slider-main-01"></label>
                     <input type="radio" name="slider-main" id="slider-main-02">
@@ -109,7 +111,7 @@
         </div>
     </section>
     <section class="icecreams">
-        <article class="icecream-item">
+        <article class="icecream-item"  data-icecream="01">
             <header class="icecream-header icecream-hit">
                 <div class="icecream-image"><img src="img/icecream-01.png" width="267" height="267" alt="icecream-image"></div>
                 <span class="icecream-price">310<span class="icecream-weight">/кг</span></span>
@@ -125,7 +127,7 @@
             <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочно-кофейное с кусочками шоколада</a></h1>
             <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
-        <article class="icecream-item">
+        <article class="icecream-item" data-icecream="03">
             <header class="icecream-header icecream-hit">
                 <div class="icecream-image"><img src="img/icecream-03.png" width="267" height="267" alt="icecream-image"></div>
                 <span class="icecream-price">355<span class="icecream-weight">/кг</span></span>
@@ -164,7 +166,8 @@
             </form>
         </div>
     </section>
-    <section class="index-map">
+    <section class="index-map" id="index-map">
+        <!--<div class="index-map-wide" id="index-map">-->
         <div class="index-map-contacts">
             <div class="index-map-address">
                 <h2>Адрес главного офиса и<br>офлайн магазина:</h2>
@@ -175,8 +178,9 @@
                 <p><strong>8 812 450-25-25</strong><br>
                     (с 10 до 20 ежедневно)</p>
             </div>
-            <a href="#" class="btn">Форма обратной связи</a>
+            <a href="#" class="btn" id="open-feedback-frame">Форма обратной связи</a>
         </div>
+        <!--</div>-->
     </section>
 </main>
 
@@ -205,9 +209,6 @@
     </section>
 </footer>
 
-<script src="js/prefixfree.min.js"></script>
-<script src="js/scripts.js"></script>
-
 <!-- frames -->
 
 <div class="overlay"></div>
@@ -231,6 +232,9 @@
     </form>
     <div class="x-button"></div>
 </div>
+
+<script src="js/prefixfree.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

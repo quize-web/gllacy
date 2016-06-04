@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="catalog-page">
+<body>
 
 <header class="main-header clearfix">
     <section class="header-logo"><a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="header-logo"></a></section>
@@ -31,14 +31,14 @@
             <!--<a href="#" class="cart empty">2 товара</a>-->
             <div class="cart-container">
                 <div class="cart-items">
-                    <div class="cart-item">
+                    <div class="cart-item" data-icecream="01">
                         <div class="x-button">X</div>
                         <div class="cart-item-image"><img src="img/cart-item-01.png" width="33" height="33" alt="icecream"></div>
                         <div class="cart-item-name">Пломбир с апельсиновым джемом</div>
                         <div class="cart-item-calc">1,5 кг <span class="cart-item-price">x 200 руб.</span></div>
                         <div class="cart-item-total">300 руб.</div>
                     </div>
-                    <div class="cart-item">
+                    <div class="cart-item" data-icecream="03">
                         <div class="x-button">X</div>
                         <div class="cart-item-image"><img src="img/cart-item-02.png" width="33" height="33" alt="icecream"></div>
                         <div class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
@@ -130,7 +130,7 @@
         <button type="submit" class="filter-btn">Применить</button>
     </form>
     <section class="icecreams">
-        <article class="icecream-item">
+        <article class="icecream-item"data-icecream="01">
             <header class="icecream-header icecream-hit">
                 <div class="icecream-image"><img src="img/icecream-01.png" width="267" height="267" alt="icecream-image"></div>
                 <span class="icecream-price">310<span class="icecream-weight">/кг</span></span>
@@ -146,7 +146,7 @@
             <h1 class="icecream-name"><a href="#" class="icecream-link" target="_blank">Сливочно-кофейное с кусочками шоколада</a></h1>
             <footer class="icecream-footer"><a href="#" class="btn">Быстрый просмотр</a></footer>
         </article>
-        <article class="icecream-item">
+        <article class="icecream-item" data-icecream="03">
             <header class="icecream-header icecream-hit">
                 <div class="icecream-image"><img src="img/icecream-03.png" width="267" height="267" alt="icecream-image"></div>
                 <span class="icecream-price">355<span class="icecream-weight">/кг</span></span>
@@ -268,5 +268,7 @@
 </footer>
 
 <script src="js/prefixfree.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
