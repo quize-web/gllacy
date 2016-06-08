@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Gllacy Shop</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body class="index-page first-slide">
@@ -166,21 +168,21 @@
             </form>
         </div>
     </section>
-    <section class="index-map" id="index-map">
-        <!--<div class="index-map-wide" id="index-map">-->
-        <div class="index-map-contacts">
-            <div class="index-map-address">
-                <h2>Адрес главного офиса и<br>офлайн магазина:</h2>
-                <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+    <section class="index-map">
+        <div class="index-map-wide" id="index-map">
+            <div class="index-map-contacts">
+                <div class="index-map-address">
+                    <h2>Адрес главного офиса и<br>офлайн магазина:</h2>
+                    <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+                </div>
+                <div class="index-map-tel">
+                    <h2>Для заказов по телефону:</h2>
+                    <p><strong>8 812 450-25-25</strong><br>
+                        (с 10 до 20 ежедневно)</p>
+                </div>
+                <a href="#" class="btn" id="open-feedback-frame">Форма обратной связи</a>
             </div>
-            <div class="index-map-tel">
-                <h2>Для заказов по телефону:</h2>
-                <p><strong>8 812 450-25-25</strong><br>
-                    (с 10 до 20 ежедневно)</p>
-            </div>
-            <a href="#" class="btn" id="open-feedback-frame">Форма обратной связи</a>
         </div>
-        <!--</div>-->
     </section>
 </main>
 
@@ -230,11 +232,12 @@
         </label>
         <button type="submit" class="btn">Отправить</button>
     </form>
-    <div class="x-button"></div>
+    <button type="button" class="x-button"></button>
 </div>
 
-<script src="js/prefixfree.min.js"></script>
-<script src="js/scripts.js"></script>
+<!--<script src="js/prefixfree.min.js"></script>-->
+<!--<script src="js/scripts.js"></script>-->
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
